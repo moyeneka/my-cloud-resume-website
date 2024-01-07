@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- Basic Page Needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>Micheal Oyenekan</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+
+    <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body>
+
+
+    <!-- Header
+   ================================================== -->
+    <header id="home">
+
+        <nav id="nav-wrap">
+
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+            <ul id="nav" class="nav">
+                <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+                <li><a class="smoothscroll" href="#about">About</a></li>
+                <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                <li><a class="smoothscroll" href="#contact">Contact</a></li>
+            </ul>
+            <!-- end #nav -->
+
+        </nav>
+        <!-- end #navxx-wrap -->
+
+        <div class="row banner">
+            <div class="banner-text">
+                <h1 class="responsive-headline">Micheal Oyenekan</h1>
+                <!--
+                <div class="hero-container" data-aos="fade-in">
+                    <p><span class="typed" data-typed-items="Welcome to My Professional Hub"></span></p>
+                </div>-->
+
+                <h3>Welcome to My Professional Hub</h3>
+                <hr />
+                <ul class="social">
+                    <li><a href="https://www.linkedin.com/in/micheal-oyenekan-520241144/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/moyeneka" target="_blank"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="counter-number"></div>
+        </div>
+
+        <p class="scrolldown">
+            <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+        </p>
+
+    </header>
+    <!-- Header End -->
+
+
+    <!-- About Section
+   ================================================== -->
+    <section id="about">
+
+        <div class="row">
+
+            <div class="three columns">
+
+                <img class="profile-pic" src="images/profile_img.jpg" alt="" />
+
+            </div>
+
+
+
+            <div class="nine columns main-col">
+
+                <h2>About Me</h2>
+
+                <p>Motivated Engineer professional with outstanding technical, analytical, leadership and communication skills. Consistently recognized for skills used to analyze and resolve technical issues rapidly and effectively. Holds multiple certifications
+                    and Higher education that validate knowledge in Engineering, IT Fundamentals, Cloud Technologies, and Security. Also have vast knowledge that range from Software skill to hardware skills in engineering. This is helps when analyzing
+                    problems. Worked on multiple project have lead as a product owner and also been a team player as an engineer. 𝐖𝐡𝐲 𝐲𝐨𝐮 𝐬𝐡𝐨𝐮𝐥𝐝 𝐡𝐢𝐫𝐞 𝐦𝐞? Cloud and Infrastructure Management? I've got it covered: AWS, EC2, S3, Lambda,
+                    VPC, RDS, Elastic Load Balancer, and more. Infrastructure as Code? Terraform and CloudFormation are in my toolkit. DevOps and Automation? Docker,GitHub Actions, and AWS DevOps tools are second nature now. And when it comes to programming
+                    languages, I've got C++, Python and JavaScript down. But what sets me apart goes beyond the technical skills. Here are the top qualities I bring to the table: ➡️ Systems Thinking & Process Improvements: My experience in operations
+                    and leadership has honed my ability to see the big picture and identify opportunities for process enhancements. I excel at streamlining workflows and driving efficiency. ➡️ Cross-functional Collaboration: Bridging the gap between technical
+                    and non-technical stakeholders is where I thrive. I understand the importance of effective communication and teamwork, ensuring that everyone is aligned towards achieving common goals. ➡️ Technical Proficiency: My relentless pursuit
+                    of Engineering mastery has equipped me with the technical skills needed to navigate complex cloud infrastructures and orchestrate seamless solutions. ➡️ Project Management: Whether it's overseeing a team during a planned shutdown or
+                    leading complex cloud projects, I bring strong project management skills to the table. I ensure tasks are completed efficiently and within schedule. ➡️ Continuous Learning: In the ever-evolving tech landscape, I'm dedicated to continuous
+                    learning. I embrace new challenges and stay updated with the latest industry trends. These skills and qualities, combined with my technical expertise, make me a valuable asset to any team. I'm ready to contribute my diverse background
+                    and knowledge to drive your Cloud initiatives forward.
+                </p>
+
+                <div class="row">
+
+                    <div class="columns contact-details">
+
+                        <h2>Contact Details</h2>
+                        <p class="address">
+                            <span>Micheal Oyenekan</span><br>
+                            <span>479-340-2681</span><br>
+                            <span>michealoyenekan04@gmail.com</span>
+                        </p>
+
+                    </div>
+
+                    <div class="columns download">
+                        <p>
+                            <a href="https://docs.google.com/document/d/1XgrDzQvCbuacYjzkOcyfNWtjXmc-3uua426Ln-NYnEY/edit" class="button" onclick="sendNotification()"><i class="fa fa-download"></i>Download Resume</a>
+                        </p>
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                        function sendNotification() {
+                            // Make an AJAX request to the Lambda function URL
+                            $.ajax({
+                                url: 'https://nrhbfalndetwp4twga65bkw42i0qbqiy.lambda-url.us-east-1.on.aws/',
+                                type: 'POST',
+                                success: function(response) {
+                                    // Handle the success response
+                                    console.log(response);
+                                },
+                                error: function(error) {
+                                    // Handle the error response
+                                    console.error(error);
+                                }
+                            });
+                        }
+                    </script>
+
+
+
+                </div>
+                <!-- end row -->
+
+            </div>
+            <!-- end .main-col -->
+
+        </div>
+
+    </section>
+    <!-- About Section End-->
+
+
+    <!-- Resume Section
+   ================================================== -->
+    <section id="resume">
+
+        <!-- WORK EXPERIENCE
+      ----------------------------------------------- -->
+        <div class="row education">
+
+            <div class="three columns header-col">
+                <h1><span>Experience</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+                <div class="row item">
+
+                    <div class="twelve columns">
+
+                        <h3>DevOp Engineering</h3>
+                        <p class="info"><a href="https://shuffle-intelligence-cloud.com/">Self Study</a> <span>&bull;</span> <em class="date">June 2022 - Present</em></p>
+
+                        <p>
+                            <div class="skills-section"></div>
+                            - I am passionate about Cloud technologies and dedicated to expanding my knowledge and skills in this field. Through continuous self-study, I am actively learning and acquiring relevant expertise to contribute to organizations seeking to migrate to the
+                            Cloud.
+
+                            <div class="skills-section">
+                                <p> - Skills: AWS · Terraform · Linux · Veracode · Dynatrace · CI/CD · Python · Docker · Git · Vim</p>
+
+                            </div>
+                        </p>
+
+
+
+                    </div>
+
+                </div>
+                <!-- item end -->
+
+
+
+                <div class="row item">
+
+                    <div class="twelve columns">
+
+                        <h3>DevSecOps Engineer</h3>
+                        <p class="info"><a href="https://www.cummins.com/" target="_blank">Cummins Inc</a> <span>&bull;</span> <em class="date">January 2023 - Present</em></p>
+
+
+                        <p>
+                            <div class="skills-section"></div>
+                            - Worked in a team to create CI/CD pipeline as code with shared groovy library using Jenkins Pipeline.
+                            <div class="skills-section"></div>
+                            - Comfortable with project management tools: Jira & Confluence.
+                            <div class="skills-section"></div>
+                            - Assist with access issues from Development & Operations teams on various applications.
+                            <div class="skills-section"></div>
+                            - Onboraded security test scanning and server monitoring tools
+                            <div class="skills-section"></div>
+                            -Provision over 20 servers in AWS and Azure
+                            <div class="skills-section"></div>
+                            - Collaborated with build and release Engineering team to integrate maven builds in Jenkins Pipeline.
+                            <div class="skills-section"></div>
+                            - Standardized maven applications and configuration with SCM, Artifactory and SonarQube.
+                            <div class="skills-section"></div>
+                            - Skills: Terraform, Dynatrace, jFrog, AWS, Azure, Veracode, GitLab, Git, Jira, Confluence.
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <!-- item end -->
+                <div class="row item">
+
+                    <div class="twelve columns">
+
+
+                        <h3>Software Engineer Intern</h3>
+                        <p class="info">
+                            <a href="https://www.linkedin.com/posts/micheal-oyenekan-520241144_im-excited-to-share-the-perspective-piece-activity-6929429117272547328-VveM?utm_source=share&utm_medium=member_desktop" target="_blank">Giltner Logistics</a><span>&bull;</span>                            <em class="date">June 2019 - August 2021</em></p>
+                        <p>
+                            <p><em>Fayetteville, AR</em></p>
+                            <div class="skills-section"></div>
+                            - Developing an HR tool application for company management use
+                            <div class="skills-section"></div>
+                            - Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design
+                            <div class="skills-section"></div>
+                            - Test and debug programs as well as assess and prioritize feature requests
+                            <div class="skills-section"></div>
+                            - Coordinate with teams to understand user requirements and provide technical solutions
+                            <div class="skills-section"></div>
+                            - Skills: · PHP · Python · MySQL · JavaScript· jQuery · Django
+                        </p>
+
+
+                    </div>
+                </div>
+                <!-- item end -->
+                <div class="row item">
+
+                    <div class="twelve columns">
+
+
+                        <h3>Cloud Engineer Intern</h3>
+                        <p class="info">
+                            <a href="https://www.simpleafbrands.com/" target="_blank">Simpleaf Brands</a><span>&bull;</span> <em class="date">May 2021 - July 2021</em></p>
+                        <p>
+
+                            <p><em>Dallas, TX</em></p>
+                            <div class="skills-section"></div>
+                            - Predicted sales with the use of 2 machine learning algorithms of a 6-month dataset
+                            <div class="skills-section"></div>
+                            - Using IAM to give access to users, roles, and a group of employees in the organization
+                            <div class="skills-section"></div>
+                            - Met over 20 tight project deadlines, oftentimes in advance
+                            <div class="skills-section"></div>
+                            - Workflow on Amazon Web services like EC2, S3, IAM, and DevOps tools like Git, GitHub, and Maven
+                            <div class="skills-section"></div>
+                            - Part of a team of DevOps engineers for infrastructure support on AWS cloud. Creating cloud formation scripts for hosting software on AWS cloud. Automating the installation of software through PowerShell scripts.
+                            <div class="skills-section"></div>
+                            - Skills: · Cloud · Python
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <!-- item end -->
+                <div class="row item">
+
+                    <div class="twelve columns">
+                        <h3>IT Asset Management Assistant</h3>
+                        <p class="info">University Of Arkansas <span>&bull;</span> <em class="date">June 2019 - August 2021</em></p>
+
+                        <p>
+                            <div class="skills-section"></div>
+                            - Provided technical support and troubleshooting for desktop systems, including reviewing clients workstations for hardware failures, and replacing parts as needed.
+                            <div class="skills-section"></div>
+                            - Purchased and built desktop workstations based on client needs and specifications.
+                            <div class="skills-section"></div>
+                            - Identified and implemented software upgrades, firewalls, and antivirus software for clients.
+                            <div class="skills-section"></div>
+                            - Setup and troubleshoot printers.
+                            <div class="skills-section"></div>
+                            - Proactively monitored trends and collaborated with other IT teams as needed.
+                            <div class="skills-section"></div>
+                            - Skills: · IT Hardware Support · Incident Management · IT Management · Virtualization · Networking · Troubleshooting · Teamwork
+                        </p>
+
+
+                    </div>
+
+                </div>
+                <!-- item end -->
+
+            </div>
+            <!-- main-col end -->
+
+        </div>
+        <!-- End Education -->
+
+
+        <!-- CERTIFICATIONS
+      ----------------------------------------------- -->
+        <div class="row work">
+
+            <div class="three columns header-col">
+                <h1><span> Certifications </span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+                <div class="row item">
+
+                    <div class="twelve columns">
+
+                        <h3>AWS Certified Solution Architect</h3>
+                        <p class="info"><a href="https://www.credly.com/users/micheal-oyenekan" target="_blank">Verify Here</a> <span>&bull;</span> <em class="date">Issued by Amazon Web Services</em></p>
+
+                        <p>
+                            I am proud to hold the AWS Certified Cloud Practitioner certification, which validates my foundational knowledge of cloud concepts, AWS services, and basic cloud architecture principles. This certification demonstrates my ability to navigate the AWS Management
+                            Console, understand security measures, pricing models, and identify key AWS services across various domains.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- item end -->
+
+
+                <div class="row item">
+
+                    <div class="twelve columns">
+
+                        <h3>AWS Certified Developer</h3>
+                        <p class="info"><a href="https://www.credly.com/users/micheal-oyenekan" target="_blank">Verify Here</a> <span>&bull;</span> <em class="date">Issued by Microsoft</em></p>
+
+                        <p>
+                            Additionally, I have earned the Microsoft Azure Fundamentals certification, showcasing my foundational knowledge of cloud concepts, Azure services, and basic cloud computing principles. I am proficient in navigating the Azure portal, understanding security
+                            measures, pricing models, and identifying key Azure services in different domains.
+                        </p>
+
+                    </div>
+
+
+                </div>
+                <!-- item end -->
+
+                <div class="row item">
+
+                    <div class="twelve columns">
+
+                        <h3>Safe for Teams</h3>
+                        <p class="info"><a href="https://www.credly.com/users/micheal-oyenekan" target="_blank">Verify Here</a> <span>&bull;</span> <em class="date">Issued by Linux Professional Institute</em></p>
+
+                        <p>
+                            The Linux Essentials certification by LPI confirms my foundational knowledge of Linux, encompassing basic commands, file systems, user management, security, and open-source software. I have demonstrated proficiency in working with various Linux distributions
+                            and possess a solid understanding of key Linux concepts.
+                        </p>
+
+                    </div>
+
+
+                </div>
+                <!-- item end -->
+                <!-- item end -->
+
+
+
+
+            </div>
+            <!-- main-col end -->
+
+        </div>
+        <!-- End Work -->
+
+
+        <!-- PROJECTS
+      ----------------------------------------------- -->
+        <div class="row work">
+
+            <div class="three columns header-col">
+                <h1><span>Projects</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+                <div class="row item">
+
+                    <!--https://shorturl.at/cOP68-->
+
+                    <div class="twelve columns">
+
+                        <h3>AWS Cloud Resume Challenge</h3>
+                        <p class="info"><a href="https://online.visual-paradigm.com/w/aunolhas/app/diagrams/?lightbox=1&highlight=0000ff&edit=https%3A%2F%2Fonline.visual-paradigm.com%2Fw%2Faunolhas%2Fapp%2Fdiagrams%2F%23diagram%3Aworkspace%3Daunolhas%26proj%3D1%26id%3D1%26type%3DUseCaseDiagram&editBlankUrl=https%3A%2F%2Fonline.visual-paradigm.com%2Fapp%2Fdiagrams%2F%23diagram%3Aproj%3D0%26vpov%3D16.3%26vpob%3D20220410%26client%3D1%26edit%3D_blank&layers=1&nav=1&title=cloud%20resume%20Architecture&vpov=16.3&vpob=20220410#R3cU2FsdcGVkX1V%2B1Wewh32y8rFU0otYn2WnGYVxL46x2wxcZaGxts%3DO8XohWQ5YanmDTF0jLl0ZLt42RaJnIsKoSHWO%2B8CrBIu7iq6Tx2QXA9Ue6s%2FKIHSfGhxFvdYhnvR%2BiQceX1G2iRKbWvswefsblo8L5LsNYEd5t5mE%2Be8t5CLE0qoWV9wSX7fFxuWpeRhl%2F1k99WeZ1FUnZKGp%2BJDpU3dMo%2Bi5W1ZtUdzOYcUM5BAU5rTi9koyOOjG1JyUtUSgRME72dRnntOG9euP2cFY9bjxASUCSlE0Edtyaj6eCbN4hsipH6UMqS9SmH4XST%2Bq7vA9eaw4VWlZSGF9tF%2FtaeDNV3VD5h4rJuEe6mJSXpggE%2Bmd16nQK9t%2F%2B11Ky622GlQioPcWXLDgD3hqIMFPXZWOBLM%2B1NfZTzkm3XiJsTV0c3r0HIg3dbBy%2FaDaMw9dXmID%2B1D43008SDjm143sY5MqyjCqSpMla0ugOBvSJgv%2BYcolHmrjpVwsDYyQ6cRznwz%2BVGsACXhjIm7UiXj9BqqwDgTaFTgb%2FPJxT4oGLDmffHM8eXyGFlUtlejZk2uKcyjbHngej7JBY4Bi30nLmxjc%2Bpr6HNpkrMx9yWDyq9d4BQSvk0bKsKRJUFhgt4jmVVM6b2EIs%2BcrvEtzAXO8NabeWmCXRgUi1qycN29i10JfYeSHcMOBUobIW1l4tx%2F6pUTgbGldJcdFq9%2BI2TrzlIMiX0JpXKSZ7IWF1GVfAUMBBSzo5mdVuCVJkGcGWESB%2BKsegIzzFPTfFvODgj4za8m2I87MxMRAjwN%2FrdnTKnmhAGbqiQQ1jf4bKx6gwIjB7G5hX9Bervcvl1fc7suw8STZsY6MgFnlw1VyMyrrfAsWwE7jujtA%2BFZ%2FuEHR4xpF69918hsMmsnG9uFFNztPVyPdgepMFK244mcxr6EWOnBoh%2BQi3bT7D1OII80JdzQYSymbj1pOD5JNW3%2F76p%2B42rksDzhlPcIY40Sr2HT68slyCrC1zQ8tHgSe7Wrx7mzXLnqcFLMCP8YDRmFGwHecj2EMlFCZ%2FXfcWDwQJDKyLDlYHX3ienrI3YaLtMFkm1FT5JCflx6bW2x1qMsKGwrpPtDfgK0AGVO8mW5K8whRvFaARK0zLhanh6IaY4Kq33MXrr7Vz4UmFF%2F315ax%2B%2FsOxzfTj6IzB7jkE2HJMEkt0SmIH7n5qkTB%2FHcnWmhaJcp39DsmzjSVi1mhG6EwDGGVvHHUEekC%2FntsIIt7ndV84XbyO7fkHIY%2FtaYHU3S2ARuxvkIstmxGowWgXCsummhD3eT8fTvumSHx97eE16iT9cM%2BnoocRIelRSOb7R9FBriULZM5or%2FUCWc7VJUOuvIX1O76PVSrUozP8TutyFLXIakTobxaQghjwIlmVt2miWCcFd5E2qOikIwQL5jJgxhcnpeae6gCwGbL2ctv7Gx9NQkNEZxul02CJBwAlkfNmzGFKlc%2Ftv7m6uSTCOSqFdmSz9i%2BZHR7YTYdHNjrcx0XW8ESQOgJWy8T8mgUHnFZirKF%2Bb4NsDiQx%2BH378DD3XRBFGM60CmNJIAS2H2VlWKkmgPzvzSMnXF4gs76zB8TSH6yj3c83tlB1xNIByUdx7nQLxycK2VOZnUPvIZOWsVw2J%2FeZ4s3bPxzJh9tL6H4NhyjKZFlLAjNQQNcvrzqwuUIPvFNspaOyz7KOJ2g9IRaqH7L1uCgpgbLPeyvWVZueATrlptlGdPJSC3TJ0TNot1AIAsDeCD96yCsXj6nCcgTaO3fh%2BoO9lX7ZXV9Z6VNGXTRQsYnF53lYqERddtGTW7y8OZnDAZyxs0r9owmOqYtcssZezYauOtJhN04TtmPevfeUGgljJeakCkEMYOPCcpmwxia4GlnQ0AmDOcEuVjhX8Vh269x2%2BLv0cWSAQDC4HF%2BLbw2%2BiwAGUgMvBRJiFHM8q%2F5Xk3ISyH%2BRqXKQbUZiLAumj%2B8LMoozjUZ1K%2Fvqw4THP8n2aIlB6AXrqAMIfuPdE8loJjsUsbCVpP%2FUmmQsrSa7qvmA8BBQ8H3yp1LEcYtufMSguixwYO3CdhESD7NIB3u2KkLbViZKcZfJV%2B0bIvfn4ewr1iQRaX%2B4OKpXEqxzfLonYQGayLQwWzoD9EMU7gRBJvG6%2FQ88rFXq451VC07y%2FWzqB51kWB174ixT5heaQC%2BJBCD848eE%2B9Fz5v6zECqlgKuxLz9AwUY44GB7vn4J%2BCDNFKCEpFsyCiMvCWwLZzdIb19bHrwjLcuz4euAWDigUpf5B12UAXTg7na8PXiqpr3SXB4RsAiWtl2GF8yG%2B1lSr%2FeNjZ4MhxzBCcJubSzB7%2Fd8SnO8tGOhLVyNhcN%2FQpZbi%2BI8g%2B1XPTgeWAleAdowU5eLIeAqSoEVNdtqJVvzTadhSqp8DhTuKatnc3fBEQkIiM1bz9qs2kgSWS9jFIXGOl7tnZa4PRcumflM%2FB%2Fzge0GpgJhQNMPLBeKehCUA2W0WeiwaBb6V2MxG6dXZp9rpFhrEpDG1n39DxGChoZ9E6K9U0Pmc1DdvB06izj201qp9rK00h18JPodqTptplXdVTJxyMhLvxqHLfBHI4VvWOZB1xe8CeMGcGbKTQxgutxQZsBAIXKcPI%2BXlW4Rbbyp%2BAm%2B6lfVkIoEBX4NCuZhp7sxuTYCJpHGc0Fl%2BASYIyCThXoym7n9YQ1wYhN42j26cHQpwM7TYoBS%2F2wWSuulG%2FuzC4F4RI60Cgt26xSmaC6wA23snDsamgIZQVSeHPT2KMtN73IXJ2VRyUdQmhhp4uGBEINwK9xksniqaRaAqajSk0vDw3DrH7sTNc6F3yK%2FbNyX%2FPRuJ91preu0SmSNQ7CSWmhexxLlU9nAX7ybvug04M07z3cHuMQX%2BAarvsJVmgJMdcpF7mPCdEF0%2Fy2OADtqeXYnaqxSrG7pEuErPgLF%2FNHBpCZ6Te%2FLAH1UYioJbN3TrjzS7WKEKTAoWdfiitb2Yghc0fVi5OLSXODLt8%2BtvyO0iCUburqlMakJmGVJYAE5mi7ZfpmLwCpiyNKBa4oEMGS5E%2BvBa0hrA85yczWr%2BnXXj5hjqjO%2FzT%2BKhenxtUc5r9w8WyKIDxSNG7S5DlbwYZ9WBhtpEoHlFZ7HzACpRsse9nEi5phgWUqL%2FMFpjBTZTV3%2Fl2RaY7lSMbfAKax98dqZcIiZC90solHf284jQurZ38r0up%2BExdHLzCIc4vJeLtM%2BMzNaMMa9sXPZjZMi3sxXBB%2B0pAxHHkFpVPPQacYUz0TMQY4Hqp9WrqLNdPl%2Bf67g%2FNDfsY7Y4b4NO4AluI1ofbNF%2BtQV7%2FPleOkTPbSfB75ZO0%2F72oIYkBCWpV4BMkFmvOK46cI%2Foq0A48U3xF%2BZqVFhWlar4%2FAL2Tink%2Bl9%2BDY3u1zoU1%2BeuVeyGsFI%2BR4nOILkTtcQS%2Bv5EPnzH4PShsNh1IhDrF3i1bt4M%2F%2B1QvvlCv8FxMnt4Ev1O8LoqWJzTnoTAIke21qujhr2kZSoxuwiLHnIQQ0Qtkg3lQuj0MPogTunruAD9SbhTUu8MXNXCeTqDDoMfVua8IOTcMmNLfpFJRytTsX4AJz2A26W%2F%2BZHk75q2bLLoRV5RKMaWIOrnYNCT%2FPp%2Fj15x3RVdlUx2udN7e1FLf9JN1GVcOaBIEYxqnnNFYvVQS0FATzB6kOuH38ad1cwuxzSfH0I7rTQHkHFog%2BdlslPN8YAcFz95BWlnnmhyRcwpfhiJ9%2BcWiUZGfNyJx0hco6JzEk95pZ1XfvZHNC1aAPSZHScnIJ2skv6Pkf2T91gn3VDIGfhpZE3QOGpU1mCEBi7EhwuuS2XZuGLr4NQsauLXlP474Vgk83RZgMYCvmLQMORufOs1nZLYQmf2CRvsaqkqlNR7jGEdy8AkcKu7BewNSWEPikuTlbJvPbkEJNWamcVE8R7mm6iWxQtxbQ62SBGXOzlWholVzR4xEpbyOMLWZcrnOZR%2FLdItKKjHRXCr%2B5FASlINIAzOR%2BbfSIEEXjYO5bjLQR1fWuliTdowPfJL3B7No%2F1R67ykevMH2R%2BsHw%2FfZ9Rv1mjiVm7vyaiVYRDttEZsyVMySVrzyshD%2BVA1mhw5HMKbzKeVx3BnZQee5RdZj67I%2Bt7eiAXSfIY0k%2BT%2FWmVcU6yt36HMbF8f7%2B0fzA34wmQ%2FHksFd5j9vWUWUsOzCZSvH%2BynrLgsPkSL1mGVHfZiuiY%2BJQdD%2Fl85QqZWnntUmrMEvUYbb017C93K0UHVdTX714ioyjXebqvsPQGNtQwh7QNuJEY9VcIUlVxzYhg%2BxsW5dRl8g0tXOrfRtMz%2BBPRkAEMNjywpCLIZSNLO9vaCa4a5ZokNuQuA1mwV%2FWH5gHaW21Rc5ef3Q5auH616O9eZrRRqxVtHiYMsPn82aatV2hX2qDCl2VgHojXEA36qbM7CMOvYQmVf%2FbTYXYVyY9RNbB31pmZrUw7TWMwgpdtQqtURUV9%2BxPGRcf2E51%2BqLQ7ZgGjsmEpTtC4E8mWGvlRJTJXFT0fh7Hn2Uh%2Bg44C6gVf3OPra%2FAIm6niKQDYO7ZAGW7vtq5zx3fWqajL9XdlKJ%2Fqiv8Ni%2BiyOy2WiCqAaVSD6ZKN6YtJ3KjDd9Dg3OtMXjXIr%2Bm3D3rrIWmYQC7OtLff2qeRwWEMGBmBkUBCfZB84%2FNQK5jjcNa7QXsXnldQrH%2B%2B68jI2tDXH9jb8QZjK82%2BYXzGuHLm9SSIlQaIpadvsznBC%2BRdB9afkdR8TliVyRppcvQh7ErJxuDGgnOgal85DSVHX7yDawcV4TJq4xTnoUiI%2Bjm%2F%2BpEOuYXEBJD5%2BcZNzVtDcHM3RSvIs2rQYAqyTE5qEKoFoSyWm%2FlHY85iHMH%2FqSJLCVW2WV0K5Gj%2FPLOTZsE7eYmX6a2w93A6oImz2G2P81y%2B15OOXaS5UlWvg5djoFoD4J2vek%2FaiIoi7JrHF3v6zzy8Gi1XJUpx7snpaHSwSiXxBUWSEugyRYa3VlkpMAeb0W8YR52uTYJ%2FtoY0wRk8AWeCW9yJxGQGOIzBw5VJ25aXhFmotizlQXORGxk9N7vyPETpD%2FMCJ%2FED0B8HwyJlsOIp6gs%2BZ2NTZYRgdGBr%2BANjuONDSDF1xHzm9ax8Px5rL1e7W9Z2h29AmvHliunB0xWpmO%2Fm5Ynjx0w65A1Mpcsr7wDdwK4kfVMPxiX71zjv%2FSdEH9ltL%2BLGXRwPm0xZTogtPSTt1JeHw4NUwxOjMy9MfURXKNk89sxkAXQX4VHug12FJYqt9ab7ui3oMRAmbmyrwnpnVpWPFFes35xW8OvnBpQv77Elpicdyxr7ysQGGjMb8zaDWV0re2ljNFtXrCOFf3bwBOA%2BsuuszmnB3CWdfyPzPVTK8eher1qf6HkS3G%2FydFxSLsqdZcKXAnL59zkMwQAX9Dka4v4OVVO2yicgyjAHKJt2HvzUItFzQbrshwahKzf9KKOT77hbgl8EKOTS%2FjNrcFm%2BcgEPvN5LJyF3gspS54KQeEIbhTHumfH3oGReTbew9pZ%2FviuDqdx8LE7EOFqZFyR3%2BNmpMeKmFwLrp2OLZ%2Bteo7Ol7gfnd%2FmwvaSgKfxKHDzmdWAAPD8Fr5W6Txfk%2F2FsThpFHDZLeFNGlJ%2BZjMuArqFuBEWZR5VuJsuVGDBkPBAoMgpEgZE9QhO6vZjCz%2BR%2BSOAtnDUzOX8t90kFyogNdNsHgNFo9o0hT047v%2FS2wlB1mF9uRE4KZDjI59U8M4SS%2FCOezD7NPg4NFEpF3Us%2FVgWviRRzBbaE6FKQBlOcxIJY%2Ffh5nkcPGFyDbK6i35BhSgwchs%2FSKin%2F6HHkjCRPjPCYw5mnlyVQVC1iLDteKWqCDovSMIP3Kz7AfDSbxaQAPvEF%2BUtg27KupBTSRT1hn6g9d%2B8t%2F2iiFXdamq%2BKfQTZQ86QEXYdN06MjqvUVXITUj24xd8em3Sko4AO4VNd5Fbs5C2AnjSoPtEqNBBhe3DH6K5ne3wBopvsdqtCEDRXEMTq5E5FKT1OF7%2BrR0BEbk27CC%2FDp3pcePLq963AbnzqxQbAyoxzNafFKUE%2BtQVL39Le0d%2Fulk4febz7agzdnelcV0jw0teqXj0heWVuoGOQ0EgQh5OOsGUO3PC4m6f%2Bm4TBXn8Y4iXHDN707%2Bj59gk8YSZYschRL%2B8S9tkzf3fhRPHWeYTreZ06ZjdzCVo61wfypSxwGXbJ8gbNBNRQfAg0LELYzK39HshSNn39zaz7L8LLcNKbFFWuBr4EV%2BK%2BMprTTWlLXqqh4vCKUR98x1jibeuIaDcgJQhY%2BRm2jTid1Iux%2F%2B1aaLdR0H%2F%2FiytZQgG1sK4iWsG5y4qwCe%2B0IiJghAr7c55YzYwy%2FDE59mPZwIqCXz7e5smPY6fUr6ROJb50mSFY%2BHF%2Ft6i8gflnxZkoD4aV%2FpUFmatqBumMvhg2k%2F4IFgVhehXDWLDLcquYmRsR9waQHqOjhmjZS0YtMG728FN2IchoiFxQ6vWN6MygFNkhX7TjpUUCJrWoHwL%2FlEbA7TEgn9yDFFAlfcaTQyvE5jaAvX9p3Ncy8eb1kGFPE6zET3TQv4y3FkX6qSQs2xaGjSx%2FYVi1j2gBpeulJESmJHMC6%2FRFWN5kECv4bIkiNgtML%2ByEAYAGaan60fCH5vub6cPWBLjlFh9HOIeTb0vv2kE3lOoN%2FkWGN2W8N%2F4YVpD39jA7dNPEEiR7RPoEKdo1TRJUUVnpg8o16CuT4IzpGNBTImZSI47nhHCKAO3fp1AsVHP3CcvIPoWBMR7VeywKWNZ9WOnu%2Bu9AojUDzpIiUi1ur8QHNIoM1fDmiA7j%2FgE3qNX1DvYwgTd60WmPmpZ9ParRFNisvGvVEhCQFK41LhAscoKu%2BrNAxzrVElDX2dBB0aLwiQ17EtAgGMEa5ou9p2TL4ovJm99fBv4jCQ3IRRdKtvM3A8W6V8tW4VDB82Mvjmicuh4frsc7DJpvVHlGNCJi4QCHAX3nofF%2BTUVJoiqj7nS5VvxB6cPNFrDUSCYiJ7GJQeoQqsGJEU%2FQRk4txuhqXgedUa2xAhohxyFAr6aol%2BKgK6%2BGiGHvO44i2jgwf0Hg9O%2FTghYBYqI4qUosR7uzJzRDPFmdg%2FGxN7e720b1hewTJsLlCiDnOfcKSqPwicS2OPjbybOGmU13Z0zSlTEsy%2BYlWvgRjMQPGG%2F6vTB4Tsma01QUfzztDUof5eXQFAX9G%2FahfyjmoM%2B8imByyrWXnWk1OnLWDYr%2BTKZDfBG9H%2Buyc7z8euzeIXvlJF4MkZchjQnfiOS4Ldu%2FSrZ5H8NIXEtGGTBu7lE0MfjLeZFaSrfS8N2Rydq%2BsQtg6KmnFPQt%2BkABOdE7aC4S%2BA6q5zpL1%2BALSBgBJ7U3nRyeBUQhCyCp4jRz5Dj%2FCaHYnMvC3bYto5i%2FZDHkMBSdK%2BbtFdQLeWg6seiiag2Wur62UUOl%2BP9WZ4M70EooGTgguLd%2BH57R9LARx2AmNu8Uia5WvkIaZV3DJ7RvkPOvZT3bDyLQm9pqI7nVTogmxJAZgX%2FHzlrBpYKgN9FvzHWAF9%2BUR1yuI90A7U9H2u4MYe8zh09VjB6P5rBgzy%2BH5SzrFIWw3xMe64RrZG9v%2Fxy9jlHmeBL%2FWTmlkQaGo9BTb%2Bo91DtgjxYA5uR7Q%2Beax3vcF4GsyzVhDKnBDEpxNog3m0BnF%2BhVLTVO11Vjj6bsTpDTE1dTWHOdDHzK3QOhR404uPFikwO3rGsbDpZ4q%2FcWbhdpwM3%2FgLS64hjxF7fAlIr%2FNUaUM8%2FDiEUdXy2QA%2FA5sYF1tTKzdrwaf%2Fa95Du0FCcEyJkTIYd80x256kMtWLiniGJ1wtgaXNXOm%2FuejVOnSOaWn3yPzczQssF6617AOo3Ynnq9EwsqYZTF3Ofw5BnufOvmqEidxrvjWeFsok8ewE3T4idLPSbP%2FjzAw522AfXkEMNsLKbnbSl8Rxsj6e6SrbSwttxmD3LrZHeDxOZfk%2BW9QhvkGaPsOJGL2FmEqoH0J7JkA3%2B1eHKzEINZjAlvohzn4xHejIhSDGRh08q4ZDyeX51XIbNrpaZ6CdoASbDQ58XIFj6WaQVjCGHABXtP9jm59KnHiu2UnxwHPxe%2FswSJS3K0fJdv9vVb8TI3b5Yh4IqgDXmvBT6Qos91d6vN7VUAVfRwa%2FqdLEKj%2BrKyg7HEFxoMFpQfVTOJB%2FKPc90n7FEAOIKSgSm5rMGZI1U84PJ1X94a2pdPSt%2BuvDlhJgAPZS7wNpaNfVwbuCePmwOeUhzk2mPjDp0NxuugcPfbH0Va%2FnE5hBwSNfFK0jH1CTfN7M1o1c6iaItAciW5EJ7hnWhWyX07xRTEGsdB4Z8ZZCMOJJvTtVrGppfdH8XlFk%2BXXcdGBGsZ1z041ycroLEpWjPi9n3UDvc75hpgCAn6%2FCzgXZw0aT6mIjrc16Q9sFDQiy5xAhbC0PwsiRXMsD2jt8v%2BQ4%2BOXmqVINjfSFeXe08cu85j4PYFwIWlm6adR1TxSqcbA0x4yYlFmeksSBk26f0AHM8%2F2HejXn5jYSBN8zIUilWMHXgOYFzOJFLlJ5BybgCXQ0eCYaBsEbQFNcUXZNeP7R2cPz3tP4AiSxDnV9iAY6k4eSzZHGvlZ1WNrDXv3bJaxFWXMJOWZ7adzE1alf%2FoyLYJVtVRWbGYfZIDrvNMCSgb5Tt2pO81ME4cVAKfylmgBe1xVaDHvgaSJphgT1ADbaXPRH0Wjo2bPZb4uCd0MaEkh4nvV0AAPZKHBol5kTe21%2FylHeqmOu%2B7EklIyvIZTQY12TSc2Uo9wmJM1vCWCEhH%2FCCOsLCIPHEDhKZYiuFINmkKubI06try6C0ar1MhsyVv2jZLdLtk9liThdWk%2FGDwlWFD%2BwwhXTixqdw5AFT6IvEknXcNIC4U%2FzZYkT1JkF4AkiMWitNOp3HYZwKnxTuy7%2FJckh2u9NqcQ9qQHicbksq3aTFYy3QSBYjSfBeMoIWBWZDBx14zq53UVhCKIi7JjB1zVMckq%2FUs8o%2FdwZfM%2FciApT416n1ZVeb7ygEtCZvB0TGOFPw8G0OeMd7ld%2BWWoZ8YaFIw6EZ3jCbGztvdZtzP9VcfnGUtkTjMmAIL3%2BNYrGh2lJNZOqoS7uGHonvfjS02bt374uroXcAn1unFutvRFBAjmhw%2B6yhrKf5BmgrmvEIREeI23tuZ16jDKw22b5N%2FEyBvXhsVqXI42mjzVAQMu%2B8VIAQqZiiIeDksNAzVTbPbc8d3Q17j2wZ6JHOqgfhT15u3AaJFE0bYdtL69ekyT8iPjqSJTkZteIsJevP3gxP2TNtO9bh349eprerzsAFbks2zKUKzgVNfZUiGPmU3u86OeK1nxvKpLtJJfNxOUs5c%2FIncIuNYxqWaiBbYFlXGHe4AhauQ0JNOs5EHgGenXN3FhuJhjBWVkueshBYAS3b12tlCgwAifHDmW%2FYRPgVGogUBiD7x%2B8lEzlr01rqU8sTnUmf8jwj8kkYQusUsyDhWm37lN2dALg1cttrKkFNAFQ%2BQzLOb4rifTCoeipQISxMOTGWqU5Qm0WzvFyH2CUOe52YZR0CKUf00mRFOPK3O3YPToYaZlMtb1qUs%2Bc3GoNh0qOfeYwTW4vTXSmqKoZRbAKANtaAtBYJ%2F%2B%2BJIMqVf4UsqYFGv2ngElXIgDLnqwJP4Ib7h%2Br9wIYWAK8nvQKRvF4uP9RwSFTwYIZeU2G1VWC6R9i6408m%2ByarztdFr3FfqLcIb%2FutqUJgUSaq7p6MNTqrZzpdfouAyd3r4B%2BRpPVlZlQEhxCGZKrlcMzwhh1G059tI%2Bne9gvQ%2BqoSbM0%2FN7HvwlYAKPogDTIB%2F91zkvrlSAfQCcSXIgJHBTIIStsgEVSjvBXEQkRRnaDIW%2FQEMYQMMChhn6tmXkJQWNy08D5Og0uJLBaVdXrFUfyV6Ay3aTNLeB3jJbbibZ8285d8aAIefcJzg6BJG6RVAQMsIN1CxRWE3fOp%2FuVG6mkP0AozrWmbrC5YDH4mpwQbtNKS6mBnXekPVDsg5MptLS%2Bkk3U31tHs9hRXH9NtCzoqyjQqWBisKWtswM8lHRrsaJe31WF6tbzh4GsQ21%2BzgFGGIqjxwIQepVDKI5ksngfQfyovvz6Wx2QmRgvgxTut%2Bsu1PdgSx1ZegXZ9Ivw4vMnfaLaPkZhnQebCEJZx9cNadAOnFXs70GxIzjUIIN7OZPWrYt1ECnetH1P96zyAUklp%2Bl7BV0OaSSX0gg0BDmvd96bCzQALsec3cJ7k0iuMvxEhyeaeSZ9JFCseziGOFJH5DgA%2FVBFXvVv0Y5GAlzrdW5%2BzqaP4bYC8Zi8kB%2FbXQpCK8lS6kfXQyiMTCe64%2BRkfrLkm4iTkTcKrwX2QmB8QtDiQE%2BwWEXncapH5M0dgGe%2FSy8bAqkkWCzf6OINdDygsst7ogBGg1JFUCo%2FlkQmvBFcsHRggZaPIiJNdyKEELo8Nx8Wlp4ULYNuhBoyONFzuoL68MKPF750JGhUUSGaFdO77j4v05zFmm%2B4I1nNaqE41BN4ZINe4nj2DgTl%2FAYXTVNqMt4mFmA5lbgzCDMF1R7BRJZBmH4LzUFS6bxXSvA8WUuOZS7ZPxTZIn2TNtAFdvM1ZkqUJJzLDY16UfgBPPcm5KswjiH68ZD6fNVMi9qCgPgsFLSDk3NmwRhUgtlO%2Bvl6bFDi3vrprDFaqyFg%2FqeLQlN815VrBVGAQ6ZMVAJBz6FaQA%2FIgKS1VO639sgbkgI2hqqxtzCmHHIfnU29WcSl%2BaDFlewLGw8rt7qDi4yLL2bzvK0NfPdxQHhj%2BGERAn67qCuDZl2k28kjqsaa88Pfc6gJYUvxmfV0XmWevCYqqTwuPMpXCekGo2vucrMKJmvLjzfLH630S1B90sxnn6cegCeV8Oj0O5JVzPvLxrXhIB2YLnsQD8rFV9rJXEJIxJT0nFmcq1U2vCUgaUn39tnoTNP37sq5n33FC5ANq9ficnx5gJ%2BLhVNyVgOjMsPZC82bAFdBDUkdPvJnr2s5nKMQydLaPm8x3ihBfF6knZckpZT2lXj8oKaQl%2B7xVhfgyzLrG6ds3xtLBn39hKayhkQ5BlEhc3EK%2BTq25FAzqWjf0umvy3hE3Bb5Xx1HupX0sDshyslnNuDIuIN5Etub1cX0tA9DH%2FZB%2BueEFM8s64KhG1C%2BsN%2FVyDEbv%2FSsFPzKpgkeChe%2BmlmklNUo34MUXr30nqUJztx4tfNOmR%2BRN%2Bs3Qo1RrhFbdcfdu1BZ%2Bx86G7uAgje7eNfvK6WIkwF1QuHw291OES0jyJqynBrjciqPzroKnRWcNjnPj7jtHmCnKtEOCaC%2B4sBS6djp7ccml%2FDbpcysRLfpO2xB7TyrDeoXJCAUorfREomFCKphIQqpKVGPjx9fK3w2RAmWltIS6nhuLL9oeUpWuuhNBhYyRgZsCu%2BV3ZKD7kCB7Lwln%2FYzon%2BsSnh4ylTK1wkfIn7f%2BqoYmQMdPv46xmz9lI8D%2Bh%2FduMlOFcsDAu074TKzHnpiInGldkHka0VYS8mTM%2BCjVYcJKM63BUIyFicZ2ja7UwwuLqX6J%2BgsJrkxvHPnkQKmY89vAWXX3uIGqjzUIswHjLx9IUYlNDak3qrCwjZv9nivyYSnNOqHm8EHYKe8dK7fAVSWQnYp8y%2F%2Bifbhk7%2BtfoJGzqqvBe%2FtqdlWbciv2ImUYmokDQPOW%2FNOQ3dq899bijmXogQuXogYtvehXVCcpX7xedlls2ccLD91WVrL%2Bn5mTSGUTBcMJA5InSJ2X%2F8AXDnO4Q1ZrTKP1SM2%2BAfDRmVM%3D1dTJO190"
+                                target="_blank">Architecture Diagram</a> </p>
+
+                        <p>
+
+                            The goal of this project was to leverage the power of the Cloud (in my case AWS) and some of it's key services to create a fully functioning serverless web application that "serves" (no pun intended) as a resume or portfolio (the website you are currently
+                            looking at). </p>
+                        </p>In summary, I setup an S3 bucket that stores all of my HTML, CSS, and JavaScript files for the website, and linked it as an origin to my CloudFront distribution to host the website. I set this up to be a secure site by reddirecting
+                        traffic to HTTPS and using AWS Certificate Manager (ACM) for the SSL certs. I also bought a domain to use with Route53 as my domain registrar, and created the A records to point my new awesome domain name (dillonmeacham.net) to
+                        my CloudFront distribution.</p>
+
+                        </p>I then created a visitor counter for the site using a DynamoDB table and Lamda function in Python for the API that gets the viewer count from the table, and displays it on the site after adding the necessary script tags in my HTML.</p>
+
+                        </p>After the site was functional and in production, I integrated CI/CD using GitHub actions to run a YAML workflow that updates my S3 bucket automatically after I commit and sync any code changes I make to my site via VSCode.
+                        </p>
+                        </p>
+                        <h3>Azure ML Infrastructure Automation with Terraform for Predictive Analytics</h3>
+
+                        <p>At my previous company, Concentra, I played a key role in developing Infrastructure as Code (IaC) solutions using Terraform. These solutions enabled us to automate the deployment of Machine Learning infrastructure on the Azure
+                            cloud platform, specifically for Predictive Analytics purposes. Additionally, I utilized GitLab for Source Control Management (SCM) and built Continuous Integration/Continuous Deployment (CI/CD) pipelines to streamline our
+                            development and deployment processes.</p>
+                        <h3>Predicting Sales – Simpleaf Brands</h3>
+
+                        <p>At Simpleaf, I actively contributed to the transition from Bitbucket to GitLab for Source Control Management (SCM). I played a key role in migrating our code repositories and ensuring a smooth transition to GitLab, leveraging its
+                            advanced collaboration and version control capabilities. Additionally, I assisted in transitioning our Continuous Integration/Continuous Deployment (CI/CD) pipelines from Bamboo to GitLab, streamlining our development and deployment
+                            processes using GitLab's comprehensive CI/CD features.</p>
+                        <h3>Knowledge Base Refresh</h3>
+
+                        <p>CI created and enhanced documentation and knowledge base articles at Cummins to improve troubleshooting processes and provide accessible resources for both ongoing and completed projects. By carefully curating and updating these
+                            materials, I ensured that team members had the necessary information to address any issues that arose during project execution. This proactive approach helped streamline problem-solving efforts and provided valuable references
+                            for future projects.</p>
+                    </div>
+
+                </div>
+                <!-- item end -->
+
+
+
+
+            </div>
+            <!-- main-col end -->
+
+        </div>
+        <!-- End Work -->
+
+
+        <!-- Education
+      ----------------------------------------------- -->
+        <div class="row skill">
+
+            <div class="three columns header-col">
+                <h1><span>Education</span></h1>
+            </div>
+
+
+
+            <div class="nine columns main-col">
+
+                <h3>Bachelor of Science in Computer Engineering </h3>
+                <p class="info"><a href="https://www.credly.com/badges/8e01c296-c5ad-446b-a383-2240790b1c6e/public_url" target="_blank">Verify Here</a> <span>&bull;</span> <em>University OF Arkansas Fayetteville Arkansas</em> <em class="date">May 2020 - July 2022</em></p>
+
+                <!-- end skill-bars -->
+
+                <h3>Associate of Science in Computer Science</h3>
+                <p class="info"><a href="https://www.credly.com/badges/8e01c296-c5ad-446b-a383-2240790b1c6e/public_url" target="_blank">Verify Here</a> <span>&bull;</span> <em>NorthWest Arkansas Community College, Bentonville, AR</em> <em class="date">2017 - 2019</em></p>
+
+                <!-- end skill-bars -->
+
+                <!-- main-col end -->
+                <p>
+                    An Alumini and experienced Computer Engineer with a demonstrated history of working on various projects. Skilled in Python, C++, PHP, MySQL, Machine Learning, Deep learning, Cloud Infrastructure. Strong engineering professional with a Bachelor of Science
+                    – BS focused in Computer Engineering from University of Arkansas, Fayetteville. Completed relevant courses Software Engineering, Database Management, BigData, Embedded Systems, Computer Architecture, Artificial Intelligence, Programming
+                    Paradigms, and Information Retrieval.
+                </p>
+
+            </div>
+            <!-- End skills -->
+
+
+
+    </section>
+    <!-- Resume Section End-->
+
+    <section id="contact">
+        <!-- Contact
+      ----------------------------------------------- -->
+        <div class="row">
+
+            <div class="three columns header-col">
+
+                <h1></h1>
+
+            </div>
+
+
+
+            <div class="nine columns main-col">
+                <div class="row skill">
+                    <div class="columns header-col">
+
+                        <a href="https://calendly.com/moyeneka/60min"><button class="submit"><strong> Schedule meeting</strong></button></a></h1>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer
+   ================================================== -->
+    <footer>
+
+        <div class="row">
+
+            <div class="twelve columns">
+
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/micheal-oyenekan-520241144/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/moyeneka" target="_blank"><i class="fa fa-github"></i></a></li>
+                </ul>
+
+                <ul class="copyright">
+                    <li>&copy; Copyright 2014 CeeVee</li>
+                    <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>
+                </ul>
+
+            </div>
+
+            <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+        </div>
+
+    </footer>
+    <!-- Footer End-->
+
+    <!-- Java Script
+   ================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
