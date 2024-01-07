@@ -23,6 +23,6 @@ After the site was functional and in production, I integrated CI/CD using GitHub
 <h2>Architecture Diagram</h2>
 
 <p align="center">
-<img src="https://imgur.com/Lhwz6GM.png" height="100%" width="100%" />
+<img src="https://ibb.co/74XXVK6" height="100%" width="100%" />
 <br />
 <br />
